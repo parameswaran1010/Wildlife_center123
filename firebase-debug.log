@@ -1,0 +1,56 @@
+[debug] [2026-01-11T17:21:55.995Z] ----------------------------------------------------------------------
+[debug] [2026-01-11T17:21:56.023Z] Command:       C:\Program Files\nodejs\node.exe C:\Users\asus\AppData\Roaming\npm\node_modules\firebase-tools\lib\bin\firebase.js deploy
+[debug] [2026-01-11T17:21:56.025Z] CLI Version:   15.2.1
+[debug] [2026-01-11T17:21:56.025Z] Platform:      win32
+[debug] [2026-01-11T17:21:56.025Z] Node Version:  v24.12.0
+[debug] [2026-01-11T17:21:56.026Z] Time:          Sun Jan 11 2026 17:21:56 GMT+0000 (Greenwich Mean Time)
+[debug] [2026-01-11T17:21:56.026Z] ----------------------------------------------------------------------
+[debug] 
+[debug] [2026-01-11T17:22:07.201Z] > command requires scopes: ["email","openid","https://www.googleapis.com/auth/cloudplatformprojects.readonly","https://www.googleapis.com/auth/firebase","https://www.googleapis.com/auth/cloud-platform"]
+[debug] [2026-01-11T17:22:07.207Z] > authorizing via signed-in user (parameswaran9061@gmail.com)
+[debug] [2026-01-11T17:22:07.208Z] [iam] checking project wildlife-center-b2fca for permissions ["firebase.projects.get","firebasehosting.sites.update"]
+[debug] [2026-01-11T17:22:07.211Z] Checked if tokens are valid: true, expires at: 1768155087515
+[debug] [2026-01-11T17:22:07.211Z] Checked if tokens are valid: true, expires at: 1768155087515
+[debug] [2026-01-11T17:22:07.213Z] >>> [apiv2][query] POST https://cloudresourcemanager.googleapis.com/v1/projects/wildlife-center-b2fca:testIamPermissions [none]
+[debug] [2026-01-11T17:22:07.213Z] >>> [apiv2][(partial)header] POST https://cloudresourcemanager.googleapis.com/v1/projects/wildlife-center-b2fca:testIamPermissions x-goog-quota-user=projects/wildlife-center-b2fca
+[debug] [2026-01-11T17:22:07.213Z] >>> [apiv2][body] POST https://cloudresourcemanager.googleapis.com/v1/projects/wildlife-center-b2fca:testIamPermissions {"permissions":["firebase.projects.get","firebasehosting.sites.update"]}
+[debug] [2026-01-11T17:22:08.193Z] <<< [apiv2][status] POST https://cloudresourcemanager.googleapis.com/v1/projects/wildlife-center-b2fca:testIamPermissions 200
+[debug] [2026-01-11T17:22:08.195Z] <<< [apiv2][body] POST https://cloudresourcemanager.googleapis.com/v1/projects/wildlife-center-b2fca:testIamPermissions {"permissions":["firebase.projects.get","firebasehosting.sites.update"]}
+[debug] [2026-01-11T17:22:08.197Z] Checked if tokens are valid: true, expires at: 1768155087515
+[debug] [2026-01-11T17:22:08.198Z] Checked if tokens are valid: true, expires at: 1768155087515
+[debug] [2026-01-11T17:22:08.199Z] >>> [apiv2][query] GET https://firebase.googleapis.com/v1beta1/projects/wildlife-center-b2fca [none]
+[debug] [2026-01-11T17:22:08.562Z] <<< [apiv2][status] GET https://firebase.googleapis.com/v1beta1/projects/wildlife-center-b2fca 200
+[debug] [2026-01-11T17:22:08.562Z] <<< [apiv2][body] GET https://firebase.googleapis.com/v1beta1/projects/wildlife-center-b2fca {"projectId":"wildlife-center-b2fca","projectNumber":"141640152528","displayName":"wildlife center","name":"projects/wildlife-center-b2fca","resources":{"hostingSite":"wildlife-center-b2fca"},"state":"ACTIVE","etag":"1_adc3d3de-d199-4cbc-8f8d-9856466444ac"}
+[debug] [2026-01-11T17:22:30.046Z] Checked if tokens are valid: true, expires at: 1768155087515
+[debug] [2026-01-11T17:22:30.047Z] Checked if tokens are valid: true, expires at: 1768155087515
+[debug] [2026-01-11T17:22:30.047Z] >>> [apiv2][query] GET https://firebasehosting.googleapis.com/v1beta1/projects/wildlife-center-b2fca/sites pageToken=&pageSize=10
+[debug] [2026-01-11T17:22:31.141Z] <<< [apiv2][status] GET https://firebasehosting.googleapis.com/v1beta1/projects/wildlife-center-b2fca/sites 200
+[debug] [2026-01-11T17:22:31.141Z] <<< [apiv2][body] GET https://firebasehosting.googleapis.com/v1beta1/projects/wildlife-center-b2fca/sites {"sites":[{"name":"projects/wildlife-center-b2fca/sites/wildlife-center-b2fca","defaultUrl":"https://wildlife-center-b2fca.web.app","appId":"1:141640152528:web:7b2e338edaf3278a96b5d5","type":"DEFAULT_SITE"}]}
+[debug] [2026-01-11T17:22:31.142Z] Checked if tokens are valid: true, expires at: 1768155087515
+[debug] [2026-01-11T17:22:31.142Z] Checked if tokens are valid: true, expires at: 1768155087515
+[debug] [2026-01-11T17:22:31.142Z] >>> [apiv2][query] GET https://firebase.googleapis.com/v1beta1/projects/-/webApps/1:141640152528:web:7b2e338edaf3278a96b5d5/config [none]
+[debug] [2026-01-11T17:22:31.642Z] <<< [apiv2][status] GET https://firebase.googleapis.com/v1beta1/projects/-/webApps/1:141640152528:web:7b2e338edaf3278a96b5d5/config 200
+[debug] [2026-01-11T17:22:31.642Z] <<< [apiv2][body] GET https://firebase.googleapis.com/v1beta1/projects/-/webApps/1:141640152528:web:7b2e338edaf3278a96b5d5/config {"projectId":"wildlife-center-b2fca","appId":"1:141640152528:web:7b2e338edaf3278a96b5d5","storageBucket":"wildlife-center-b2fca.firebasestorage.app","apiKey":"AIzaSyB1EVlWzudwiZd0seO9lUC9S4Y39w5JAHo","authDomain":"wildlife-center-b2fca.firebaseapp.com","messagingSenderId":"141640152528","projectNumber":"141640152528","version":"2"}
+[info] 
+   Thank you for trying our early preview of Next.js support on Firebase Hosting.
+   During the preview, support is best-effort and breaking changes can be expected. Proceed with caution.
+   The integration is known to work with Next.js version 12 - 15.0. You may encounter errors.
+
+   Documentation: https://firebase.google.com/docs/hosting/frameworks/nextjs
+   File a bug: https://github.com/firebase/firebase-tools/issues/new?template=bug_report.md
+   Submit a feature request: https://github.com/firebase/firebase-tools/issues/new?template=feature_request.md
+
+   We'd love to learn from you. Express your interest in helping us shape the future of Firebase Hosting: https://goo.gle/41enW5X
+
+[debug] [2026-01-11T17:23:08.523Z] Checked if tokens are valid: true, expires at: 1768155087515
+[debug] [2026-01-11T17:23:08.523Z] Checked if tokens are valid: true, expires at: 1768155087515
+[debug] [2026-01-11T17:23:08.523Z] >>> [apiv2][query] GET https://firebasehosting.googleapis.com/v1beta1/projects/wildlife-center-b2fca/sites/wildlife-center-b2fca [none]
+[debug] [2026-01-11T17:23:09.457Z] <<< [apiv2][status] GET https://firebasehosting.googleapis.com/v1beta1/projects/wildlife-center-b2fca/sites/wildlife-center-b2fca 200
+[debug] [2026-01-11T17:23:09.458Z] <<< [apiv2][body] GET https://firebasehosting.googleapis.com/v1beta1/projects/wildlife-center-b2fca/sites/wildlife-center-b2fca {"name":"projects/wildlife-center-b2fca/sites/wildlife-center-b2fca","defaultUrl":"https://wildlife-center-b2fca.web.app","appId":"1:141640152528:web:7b2e338edaf3278a96b5d5","type":"DEFAULT_SITE"}
+[info] ▲ Next.js 16.1.1 (Turbopack)
+
+[info] - Environments: .env.local
+
+
+[info]   Creating an optimized production build ...
+
